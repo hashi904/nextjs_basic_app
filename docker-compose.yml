@@ -9,6 +9,6 @@ services:
       - .:/app
     command: yarn dev
     ports:
-      - "5000:5000"
+      - "6211:6211"
     environment:
       NODE_ENV: development

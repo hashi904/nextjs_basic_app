@@ -29,8 +29,8 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
 
-EXPOSE 5000
+EXPOSE 6211
 
-ENV PORT 5000
+ENV PORT 6211
 
 CMD ["yarn", "start"]
